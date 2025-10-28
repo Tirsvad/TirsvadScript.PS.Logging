@@ -1,8 +1,8 @@
-# Pester tests for src/logging.ps1
+# Pester tests for src/TirsvadScript.Logging.ps1
 # Requires Pester (commonly preinstalled in PowerShell)
 
-Describe 'Logging.ps1' {
-	$scriptPath = Resolve-Path (Join-Path $PSScriptRoot '..\src\logging.ps1')
+Describe 'TirsvadScript.Logging.ps1' {
+	$scriptPath = Resolve-Path (Join-Path $PSScriptRoot '..\src\TirsvadScript.Logging.ps1')
 
 	It 'defines expected logging functions and defaults VerboseMode to 2 when not set' {
 		$job = Start-Job -ScriptBlock {
